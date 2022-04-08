@@ -15,11 +15,11 @@ try:
         if round(float(temp)) >= 70:
             print("CPU temperature is over 70°C --> Fan speed: 100%")
             pwm.ChangeDutyCycle(100)
-            time.sleep(20)
+            time.sleep(30)
         elif round(float(temp)) >= 60:
             print("CPU temperature is over 60°C --> Fan speed: 80%")
             pwm.ChangeDutyCycle(80)
-            time.sleep(15)
+            time.sleep(20)
         elif round(float(temp)) >= 50:
             print("CPU temperature is over 50°C --> Fan speed: 50%")
             pwm.ChangeDutyCycle(50)
@@ -29,7 +29,7 @@ try:
             pwm.ChangeDutyCycle(25)
             time.sleep(15)
         else:
-            print("CPU temperature is lower than 45°C. Fan speed: 0%")
+            print("CPU temperature is lower than 45°C. --> Fan speed: 0%")
             pwm.ChangeDutyCycle(0)
             time.sleep(15)
 except KeyboardInterrupt:
