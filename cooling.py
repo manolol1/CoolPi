@@ -25,7 +25,7 @@ try:
             pwm.ChangeDutyCycle(25)
             time.sleep(20)
         else:
-            print("CPU temperature is lower than 45°C. --> Fan speed: 0%")
+            print("CPU temperature is lower than 50°C. --> Fan speed: 0%")
             pwm.ChangeDutyCycle(0)
             time.sleep(15)
 except KeyboardInterrupt:
