@@ -29,7 +29,7 @@ try:
             pwm.ChangeDutyCycle(0)
             timeOn -= 20
         print("Current Temperature: " + temp + "°C")
-        print("Fan on since script start: " + timeOn + " seconds")
+        print("Fan on since script start: " + (int) timeOn + " seconds")
         time.sleep(20)
 except KeyboardInterrupt:
     pwm.stop()
