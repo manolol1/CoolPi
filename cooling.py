@@ -23,7 +23,7 @@ try:
             print("CPU temperature is over 60°C --> Fan speed: 25%")
             pwm.ChangeDutyCycle(25)
         else:
-            print("CPU temperature is lower than 50°C. --> Fan speed: 0%")
+            print("CPU temperature is lower than 60°C. --> Fan speed: 0%")
             pwm.ChangeDutyCycle(0)
         
         print("Current Temperature: " + temp + "°C")
