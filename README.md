@@ -1,3 +1,5 @@
+# This repository was moved to https://forgejo.manolol.xyz/mario/CoolPi
+
 Example Systemd service file:
 ```                                                           
 [Unit]
